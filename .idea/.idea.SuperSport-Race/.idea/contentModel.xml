@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Framework" t="Include">
+          <e p="Script" t="Include">
+            <e p="Animation" t="Include">
+              <e p="EasyAnimation.cs" t="Include" />
+            </e>
+            <e p="Application" t="Include">
+              <e p="Environment.cs" t="Include" />
+            </e>
+            <e p="Color" t="Include">
+              <e p="ColorUtility.cs" t="Include" />
+            </e>
+            <e p="Container" t="Include">
+              <e p="SystemContextContainer.cs" t="Include" />
+            </e>
+            <e p="Context" t="Include">
+              <e p="ApplicationContext.cs" t="Include" />
+              <e p="Context.cs" t="Include" />
+              <e p="SystemContext.cs" t="Include" />
+            </e>
+            <e p="Corutine" t="Include">
+              <e p="AbsolutelyActiveCorutine.cs" t="Include" />
+            </e>
+            <e p="DataStore" t="Include">
+              <e p="IDataStore.cs" t="Include" />
+            </e>
+            <e p="Debug" t="Include">
+              <e p="Log" t="Include">
+                <e p="DebugLog.cs" t="Include" />
+              </e>
+              <e p="View" t="Include">
+                <e p="DebugCanvas.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Entity" t="Include">
+              <e p="IEntity.cs" t="Include" />
+            </e>
+            <e p="Input" t="Include">
+              <e p="UITocuhTransformer.cs" t="Include" />
+            </e>
+            <e p="Math" t="Include">
+              <e p="MathHelper.cs" t="Include" />
+              <e p="Polar.cs" t="Include" />
+              <e p="VectorExtensions.cs" t="Include" />
+              <e p="VectorHelper.cs" t="Include" />
+            </e>
+            <e p="Model" t="Include">
+              <e p="IModel.cs" t="Include" />
+            </e>
+            <e p="Presenter" t="Include">
+              <e p="RootPresenter.cs" t="Include" />
+            </e>
+            <e p="ReactiveProperty" t="Include">
+              <e p="CustomEqualityComparer.cs" t="Include" />
+              <e p="Observer.cs" t="Include" />
+              <e p="ReactiveProperty.cs" t="Include" />
+              <e p="Subscribe.cs" t="Include" />
+            </e>
+            <e p="Repository" t="Include">
+              <e p="BaseRepository.cs" t="Include" />
+              <e p="IRepository.cs" t="Include" />
+            </e>
+            <e p="Singleton" t="Include">
+              <e p="MonoSingleton.cs" t="Include" />
+            </e>
+            <e p="Sound" t="Include">
+              <e p="SoundManager.cs" t="Include" />
+              <e p="SoundPlayer.cs" t="Include" />
+            </e>
+            <e p="StateMachine" t="Include">
+              <e p="StateMachine.cs" t="Include" />
+            </e>
+            <e p="UseCase" t="Include">
+              <e p="IUseCase.cs" t="Include" />
+            </e>
+            <e p="View" t="Include">
+              <e p="IView.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Script" t="Include">
+          <e p="Camera" t="Include">
+            <e p="CameraManager.cs" t="Include" />
+            <e p="CameraState.cs" t="Include" />
+            <e p="CameraStateMachine.cs" t="Include" />
+            <e p="CameraStateStart.cs" t="Include" />
+            <e p="CameraStateTitle.cs" t="Include" />
+            <e p="WorldCamera.cs" t="Include" />
+          </e>
+          <e p="Title" t="Include">
+            <e p="TitleContext.cs" t="Include" />
+            <e p="TitlePresenter.cs" t="Include" />
+            <e p="TitleUseCase.cs" t="Include" />
+            <e p="TitleView.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="SuperSport-Race.sln" t="IncludeFlat" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_SuperSport-Race.-60181397.00" t="ExcludeRecursive" />
+  </component>
+</project>
