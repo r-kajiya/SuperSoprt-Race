@@ -21,7 +21,7 @@ namespace SuperSport
             _transform = GetComponent<Transform>();
         }
 
-        public void Accelerator()
+        public void Accelerator(float boost)
         {
             _rigidbody.AddForce(new Vector3(_addForce, 0f, 0f));
         }

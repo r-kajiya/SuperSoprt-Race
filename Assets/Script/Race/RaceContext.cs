@@ -19,9 +19,13 @@ namespace SuperSport
         [SerializeField]
         RaceGoal _raceGoal = null;
         
+        [SerializeField]
+        RaceNPC[] _qualifying = null;
+        
         protected override IEnumerator DoPreLoad(SystemContextContainer container)
         {
-            _useCase = new RaceUseCase(racePresenter, _racePlayer, _raceGoal, OnChangeResult);
+            _useCase = new RaceUseCase(racePresenter, _racePlayer, _raceGoal, _qualifying, OnChangeResult, OnChangeTitle);
+            
             CameraManager.I.RequestCameraState(CameraStateType.Race);
 
             yield break;

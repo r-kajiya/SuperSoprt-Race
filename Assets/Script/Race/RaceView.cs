@@ -15,5 +15,10 @@ namespace SuperSport
         Button _accelerationArea = null;
 
         public Button AccelerationArea => _accelerationArea;
+
+        [SerializeField]
+        Text _time = null;
+
+        public Text Time => _time;
     }
 }

@@ -96,6 +96,7 @@
           <e p="Race" t="Include">
             <e p="RaceContext.cs" t="Include" />
             <e p="RaceGoal.cs" t="Include" />
+            <e p="RaceNPC.cs" t="Include" />
             <e p="RacePlayer.cs" t="Include" />
             <e p="RacePresenter.cs" t="Include" />
             <e p="RaceUseCase.cs" t="Include" />
