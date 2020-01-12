@@ -6,16 +6,14 @@ namespace SuperSport
     public class CameraManager : MonoSingleton<CameraManager>
 	{
         [SerializeField]
-        WorldCamera _gameCamera;
+        WorldCamera _worldCamera;
 
-        public WorldCamera GameCamera { get { return _gameCamera; } }
-        
         CameraStateMachine _stateMachine;
 
         protected override void OnAwake()
         {
             FindOrCreateGameCamera();
-            _stateMachine = new CameraStateMachine(GameCamera);
+            _stateMachine = new CameraStateMachine(_worldCamera);
         }
 
         void LateUpdate()
@@ -25,19 +23,12 @@ namespace SuperSport
 
         void FindOrCreateGameCamera()
         {
-            if (_gameCamera != null)
+            if (_worldCamera != null)
             {
                 return;
             }
 
-            _gameCamera = GameObject.FindObjectOfType<WorldCamera>();
-
-            if(_gameCamera == null)
-            {
-                var prefab = Resources.Load<WorldCamera>("Camera/GameCamera");
-                _gameCamera = GameObject.Instantiate<WorldCamera>(prefab);
-                _gameCamera.name = "GameCamera";
-            }
+            _worldCamera = GameObject.FindObjectOfType<WorldCamera>();
         }
 
         public void RequestCameraState(CameraStateType stateType)

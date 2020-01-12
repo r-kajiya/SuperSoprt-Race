@@ -9,37 +9,50 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Color/ColorUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Result/ResultContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitlePresenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitleUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Result/ResultPresenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/CustomEqualityComparer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Sound/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraStateTitle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Sound/SoundPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/WorldCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Result/ResultView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraStateStart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Result/ResultUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraStateRace.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitleView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitleContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/MathHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/VectorHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/Observer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Debug/Log/DebugLog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/Polar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/VectorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RacePresenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/Subscribe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraStateSky.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Singleton/MonoSingleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/ReactiveProperty.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.3.4/Runtime/Behaviours/CinemachineBrain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Context/ApplicationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Debug/View/DebugCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Context/SystemContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RacePlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceGoal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Corutine/AbsolutelyActiveCorutine.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleContext.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Title/TitlePresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleUseCase.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Singleton/MonoBehaviourSingleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Color/ColorUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/CustomEqualityComparer.cs" />
@@ -56,12 +69,32 @@
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Math/Polar.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Math/VectorExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Sound/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Context/SystemContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateStart.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateRace.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateTitle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Title/TitlePresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Corutine/AbsolutelyActiveCorutine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RacePresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceView.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Camera/WorldCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateTitle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateStart.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateSky.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceGoal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleUseCase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultUseCase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceUseCase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Debug/View/DebugCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RacePlayer.cs" />
       </list>
     </option>
   </component>
@@ -109,20 +142,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578718635985</updated>
-      <workItem from="1578718640641" duration="5475000" />
+      <workItem from="1578718640641" duration="16664000" />
     </task>
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="WindowStateProjectService">
-    <state x="547" y="301" width="698" height="486" key="find.popup" timestamp="1578743905517">
+    <state x="547" y="301" width="698" height="486" key="find.popup" timestamp="1578808800372">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
-    <state x="547" y="301" width="698" height="486" key="find.popup/0.23.1792.1042@0.23.1792.1042" timestamp="1578743905517" />
-    <state x="560" y="194" width="672" height="676" key="search.everywhere.popup" timestamp="1578743892096">
+    <state x="547" y="301" width="698" height="486" key="find.popup/0.23.1792.1042@0.23.1792.1042" timestamp="1578808800372" />
+    <state x="560" y="194" width="672" height="676" key="search.everywhere.popup" timestamp="1578806270733">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
-    <state x="560" y="194" width="672" height="676" key="search.everywhere.popup/0.23.1792.1042@0.23.1792.1042" timestamp="1578743892096" />
+    <state x="560" y="194" width="672" height="676" key="search.everywhere.popup/0.23.1792.1042@0.23.1792.1042" timestamp="1578806270733" />
   </component>
 </project>

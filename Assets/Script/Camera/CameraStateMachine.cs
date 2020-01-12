@@ -5,7 +5,8 @@ namespace SuperSport
     public enum CameraStateType
     {
         Title,
-        Start
+        Race,
+        Sky,
     }
 
     public class CameraStateMachine : StateMachine<CameraState>
@@ -13,7 +14,8 @@ namespace SuperSport
         public CameraStateMachine(WorldCamera camera)
         {
             Register(new CameraStateTitle(this, camera), CameraStateType.Title);
-            Register(new CameraStateStart(this, camera), CameraStateType.Start);
+            Register(new CameraStateRace(this, camera), CameraStateType.Race);
+            Register(new CameraStateSky(this, camera), CameraStateType.Sky);
 
             Dispatch((int)CameraStateType.Title);
         }

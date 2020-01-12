@@ -88,9 +88,24 @@
             <e p="CameraManager.cs" t="Include" />
             <e p="CameraState.cs" t="Include" />
             <e p="CameraStateMachine.cs" t="Include" />
-            <e p="CameraStateStart.cs" t="Include" />
+            <e p="CameraStateRace.cs" t="Include" />
+            <e p="CameraStateSky.cs" t="Include" />
             <e p="CameraStateTitle.cs" t="Include" />
             <e p="WorldCamera.cs" t="Include" />
+          </e>
+          <e p="Race" t="Include">
+            <e p="RaceContext.cs" t="Include" />
+            <e p="RaceGoal.cs" t="Include" />
+            <e p="RacePlayer.cs" t="Include" />
+            <e p="RacePresenter.cs" t="Include" />
+            <e p="RaceUseCase.cs" t="Include" />
+            <e p="RaceView.cs" t="Include" />
+          </e>
+          <e p="Result" t="Include">
+            <e p="ResultContext.cs" t="Include" />
+            <e p="ResultPresenter.cs" t="Include" />
+            <e p="ResultUseCase.cs" t="Include" />
+            <e p="ResultView.cs" t="Include" />
           </e>
           <e p="Title" t="Include">
             <e p="TitleContext.cs" t="Include" />

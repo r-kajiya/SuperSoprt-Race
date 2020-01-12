@@ -1,4 +1,5 @@
-﻿using Framework;
+﻿using System;
+using Framework;
 
 namespace SuperSport
 {
@@ -6,9 +7,10 @@ namespace SuperSport
     {
         readonly TitlePresenter _presenter;
 
-        public TitleUseCase()
+        public TitleUseCase(TitlePresenter presenter, Action onChangeRace)
         {
-            
+            _presenter = presenter;
+            _presenter.RegisterGoRaceButton(onChangeRace);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Cinemachine;
+using UnityEngine;
 
 namespace SuperSport
 {
@@ -7,14 +8,8 @@ namespace SuperSport
 	{
         public new Camera camera;
 
-        public Transform cameraTransform;
-
-        public Transform lookAt;
-
-        public Transform follow;
-        void Awake()
-        {
-            cameraTransform = transform;
-        }
+        public CinemachineVirtualCamera virtualCameraTitle;
+        public CinemachineVirtualCamera virtualCameraRace;
+        public CinemachineVirtualCamera virtualCameraSky;
     }	
 }

@@ -1,21 +1,22 @@
 ﻿using System.Collections;
-using UnityEngine;
 using Framework;
 
 namespace SuperSport
 {
     public class TitleContext : SystemContext
     {
-        [SerializeField]
-        Transform _uiRoot = null;
+        TitlePresenter titlePresenter {
+            get { return RootPresenter as TitlePresenter;
+            }
+        }
 
-        [SerializeField]
-        TitlePresenter _presenter = null;
-        
         TitleUseCase _useCase;
         
         protected override IEnumerator DoPreLoad(SystemContextContainer container)
         {
+            CameraManager.I.RequestCameraState(CameraStateType.Title);
+            _useCase = new TitleUseCase(titlePresenter, OnChangeRace);
+
             yield break;
         }
 
@@ -44,9 +45,9 @@ namespace SuperSport
             yield break;
         }
         
-        void OnChangeAnimalMap()
+        void OnChangeRace()
         {
-            ChangeContext(SystemContexts["AnimalMapContext"]);
+            ChangeContext(SystemContexts["RaceContext"]);
         }
     }
 }

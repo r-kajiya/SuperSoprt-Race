@@ -9,10 +9,10 @@ namespace SuperSport
         [SerializeField]
         TitleView _view = null;
 
-        public void RegisterGoGameButton(Action onAction)
+        public void RegisterGoRaceButton(Action onAction)
         {
-            _view.GoGameButton.onClick.RemoveAllListeners();
-            _view.GoGameButton.onClick.AddListener(() => { onAction?.Invoke(); });
+            _view.GoRaceButton.onClick.RemoveAllListeners();
+            _view.GoRaceButton.onClick.AddListener(() => { onAction?.Invoke(); });
         }
     }
 }
