@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Framework;
+using UnityEngine;
 
 namespace SuperSport
 {
@@ -10,12 +11,20 @@ namespace SuperSport
             }
         }
 
-        TitleUseCase _useCase;
+        [SerializeField]
+        RankingPresenter _rankingPresenter = null;
+
+        TitleUseCase _titleUseCase;
+        RankingUseCase _rankingUseCase;
         
         protected override IEnumerator DoPreLoad(SystemContextContainer container)
         {
             CameraManager.I.RequestCameraState(CameraStateType.Title);
-            _useCase = new TitleUseCase(titlePresenter, OnChangeRace);
+            _rankingUseCase = new RankingUseCase(_rankingPresenter);
+            _titleUseCase = new TitleUseCase(titlePresenter, OnChangeRace, () =>
+            {
+                _rankingUseCase.Open();
+            });
 
             yield break;
         }
@@ -45,9 +54,14 @@ namespace SuperSport
             yield break;
         }
         
-        void OnChangeRace()
+        void OnChangeRace(RaceType raceType)
         {
-            ChangeContext(SystemContexts["RaceContext"]);
+            ChangeContext(SystemContexts["RaceContext"], new TitleContextContainer(raceType));
+        }
+        
+        void OnChangeRanking()
+        {
+            // ChangeContext(SystemContexts["RaceContext"]);
         }
     }
 }

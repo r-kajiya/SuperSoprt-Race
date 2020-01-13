@@ -41,6 +41,7 @@
               <e p="IEntity.cs" t="Include" />
             </e>
             <e p="Input" t="Include">
+              <e p="TouchGuard.cs" t="Include" />
               <e p="UITocuhTransformer.cs" t="Include" />
             </e>
             <e p="Math" t="Include">
@@ -99,6 +100,7 @@
             <e p="RaceNPC.cs" t="Include" />
             <e p="RacePlayer.cs" t="Include" />
             <e p="RacePresenter.cs" t="Include" />
+            <e p="RaceType.cs" t="Include" />
             <e p="RaceUseCase.cs" t="Include" />
             <e p="RaceView.cs" t="Include" />
           </e>
@@ -109,7 +111,13 @@
             <e p="ResultView.cs" t="Include" />
           </e>
           <e p="Title" t="Include">
+            <e p="Ranking" t="Include">
+              <e p="RankingPresenter.cs" t="Include" />
+              <e p="RankingUseCase.cs" t="Include" />
+              <e p="RankingView.cs" t="Include" />
+            </e>
             <e p="TitleContext.cs" t="Include" />
+            <e p="TitleContextContainer.cs" t="Include" />
             <e p="TitlePresenter.cs" t="Include" />
             <e p="TitleUseCase.cs" t="Include" />
             <e p="TitleView.cs" t="Include" />

@@ -7,10 +7,14 @@ namespace SuperSport
     {
         readonly TitlePresenter _presenter;
 
-        public TitleUseCase(TitlePresenter presenter, Action onChangeRace)
+        public TitleUseCase(TitlePresenter presenter, Action<RaceType> onChangeRace, Action onOpenRanking)
         {
             _presenter = presenter;
-            _presenter.RegisterGoRaceButton(onChangeRace);
+            _presenter.RegisterGoQualifyingButton(onChangeRace);
+            _presenter.RegisterGoSemifinalButton(onChangeRace);
+            _presenter.RegisterGoFinalButton(onChangeRace);
+            _presenter.RegisterGoRankButton(onChangeRace);
+            _presenter.RegisterGoRankingButton(onOpenRanking);
         }
     }
 }

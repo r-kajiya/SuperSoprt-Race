@@ -45,7 +45,6 @@ namespace SuperSport
             _isUpdate = false;
             _time = 0;
             _randomAccelerator = UnityEngine.Random.Range(0, 1);
-            DebugLog.Normal("Awake");
         }
 
         void Update()

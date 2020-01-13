@@ -24,7 +24,27 @@ namespace SuperSport
         
         protected override IEnumerator DoPreLoad(SystemContextContainer container)
         {
-            _useCase = new RaceUseCase(racePresenter, _racePlayer, _raceGoal, _qualifying, OnChangeResult, OnChangeTitle);
+            TitleContextContainer titleContextContainer = container as TitleContextContainer;
+
+            RaceNPC[] entries = null;
+
+            switch (titleContextContainer.RaceType)
+            {
+                case RaceType.Qualifying:
+                    entries = _qualifying;
+                    break;
+                case RaceType.Semifinal:
+                    entries = _qualifying;
+                    break;
+                case RaceType.Final:
+                    entries = _qualifying;
+                    break;
+                case RaceType.Rank:
+                    entries = _qualifying;
+                    break;
+            }
+
+            _useCase = new RaceUseCase(racePresenter, _racePlayer, _raceGoal, entries, OnChangeResult, OnChangeTitle);
             
             CameraManager.I.RequestCameraState(CameraStateType.Race);
 
