@@ -94,6 +94,12 @@
             <e p="CameraStateTitle.cs" t="Include" />
             <e p="WorldCamera.cs" t="Include" />
           </e>
+          <e p="PlayerData" t="Include">
+            <e p="PlayerDataStore.cs" t="Include" />
+            <e p="PlayerEntity.cs" t="Include" />
+            <e p="PlayerModel.cs" t="Include" />
+            <e p="PlayerRepository.cs" t="Include" />
+          </e>
           <e p="Race" t="Include">
             <e p="RaceCharacter.cs" t="Include" />
             <e p="RaceContext.cs" t="Include" />
