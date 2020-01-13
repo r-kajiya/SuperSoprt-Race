@@ -44,7 +44,7 @@ namespace SuperSport
                     break;
             }
 
-            _useCase = new RaceUseCase(racePresenter, _racePlayer, _raceGoal, entries, OnChangeResult, OnChangeTitle);
+            _useCase = new RaceUseCase(racePresenter, _racePlayer, _raceGoal, entries, titleContextContainer.RaceType, OnChangeResult, OnChangeTitle);
             
             CameraManager.I.RequestCameraState(CameraStateType.Race);
 
@@ -81,9 +81,9 @@ namespace SuperSport
             ChangeContext(SystemContexts["TitleContext"]);
         }
         
-        void OnChangeResult()
+        void OnChangeResult(bool isWin, float time, bool isRank)
         {
-            ChangeContext(SystemContexts["ResultContext"]);
+            ChangeContext(SystemContexts["ResultContext"], new RaceContextContainer(isWin, time, isRank));
         }
     }
 }

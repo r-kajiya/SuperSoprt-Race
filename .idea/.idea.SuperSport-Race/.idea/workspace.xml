@@ -8,11 +8,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceContextContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Sound/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Sound/SoundPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceCharacter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/MathHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/VectorHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/Polar.cs" root0="FORCE_HIGHLIGHTING" />
@@ -44,6 +46,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitleView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitleContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/ad/6982b3b7/IComparable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/Observer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Debug/Log/DebugLog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceContext.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,7 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Singleton/MonoBehaviourSingleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Color/ColorUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/CustomEqualityComparer.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/Observer.cs" />
@@ -91,17 +93,9 @@
         <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateSky.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultUseCase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultContext.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Debug/View/DebugCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Race/RaceView.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Corutine/AbsolutelyActiveCorutine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Race/RacePresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Race/RacePlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceGoal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceNPC.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Title/TitleView.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Race/RaceType.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Title/TitlePresenter.cs" />
@@ -112,8 +106,19 @@
         <option value="$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingView.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingUseCase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceUseCase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceContextContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Race/RaceContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RacePresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RacePlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceGoal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/IRaceCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultUseCase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceUseCase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceNPC.cs" />
       </list>
     </option>
   </component>
@@ -161,7 +166,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578718635985</updated>
-      <workItem from="1578718640641" duration="28517000" />
+      <workItem from="1578718640641" duration="31512000" />
     </task>
     <servers />
   </component>

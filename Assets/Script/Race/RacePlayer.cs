@@ -4,7 +4,7 @@ using UnityEngine;
 namespace SuperSport
 {
     [RequireComponent(typeof(Rigidbody))]
-    public class RacePlayer : MonoBehaviour
+    public class RacePlayer : RaceCharacter
     {
         Rigidbody _rigidbody;
         Transform _transform;
@@ -14,7 +14,7 @@ namespace SuperSport
 
         [SerializeField]
         Vector3 _startPos = Vector3.zero;
-        
+
         void Awake()
         {
             _rigidbody = GetComponent<Rigidbody>();
@@ -31,6 +31,7 @@ namespace SuperSport
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.angularVelocity = Vector3.zero;
             _transform.localPosition = _startPos;
+            Timer = 99.9f;
         }
     }
 }

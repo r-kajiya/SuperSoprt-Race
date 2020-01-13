@@ -9,7 +9,7 @@ namespace SuperSport
         readonly RacePresenter _presenter;
         readonly RacePlayer _racePlayer;
         readonly RaceNPC[] _raceNpcs;
-        readonly Action _onChangeResult;
+        readonly Action<bool, float, bool> _onChangeResult;
         readonly Action _onChangeTitle;
         readonly RaceGoal _raceGoal;
         
@@ -17,8 +17,10 @@ namespace SuperSport
         bool _isStart;
         bool _isTapped;
         int _tapCount;
+        RaceType _raceType;
+        bool _isGoal;
 
-        public RaceUseCase(RacePresenter presenter, RacePlayer racePlayer, RaceGoal raceGoal, RaceNPC[] raceNpcs, Action onChangeResult, Action onChangeTitle)
+        public RaceUseCase(RacePresenter presenter, RacePlayer racePlayer, RaceGoal raceGoal, RaceNPC[] raceNpcs, RaceType raceType, Action<bool, float, bool> onChangeResult, Action onChangeTitle)
         {
             _presenter = presenter;
             _racePlayer = racePlayer;
@@ -32,6 +34,8 @@ namespace SuperSport
             _startTime = 0f;
             _tapCount = 0;
             _isStart = false;
+            _raceType = raceType;
+            _isGoal = false;
             
             _racePlayer.SetupStart();
             foreach (var raceNpc in _raceNpcs)
@@ -114,18 +118,26 @@ namespace SuperSport
             _racePlayer.Accelerator(boost);
         }
 
-        void OnGoal()
+        void OnGoal(RaceCharacter raceCharacter)
         {
-            foreach (var _raceNpc in _raceNpcs)
+            bool isWin = raceCharacter == _racePlayer && !_isGoal;
+            _isGoal = true;
+
+            if (_raceNpcs != null)
             {
-                _raceNpc.StopRun();
+                foreach (var _raceNpc in _raceNpcs)
+                {
+                    _raceNpc.StopRun();
+                }
             }
-            
+
             DebugLog.Normal($"タップ回数：{_tapCount}");
-            _presenter.StopTime();
-            _onChangeResult?.Invoke();
+            
+            float time = _presenter.GetTime();
+            bool isRank = _raceType == RaceType.Rank;
+            _onChangeResult?.Invoke(isWin, time, isRank);
             _raceGoal.RegisterEnter(null);
+            _presenter.StopTime();
         }
-        
     }
 }

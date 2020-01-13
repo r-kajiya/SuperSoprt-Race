@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Timers;
 using UnityEngine;
 using Framework;
 
@@ -11,6 +12,7 @@ namespace SuperSport
         RaceView _view = null;
         
         float _timer;
+
         bool _measuring;
 
         public void Setup()
@@ -36,6 +38,11 @@ namespace SuperSport
             _view.Time.gameObject.SetActive(true);
             _view.Time.text = string.Format("{0:F4}", _timer);
             AbsolutelyActiveCorutine.Subscribe(UpdateTime());
+        }
+
+        public float GetTime()
+        {
+            return _timer;
         }
 
         public void StopTime()

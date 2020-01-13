@@ -6,7 +6,7 @@ using UnityEngine;
 namespace SuperSport
 {
     [RequireComponent(typeof(Rigidbody))]
-    public class RaceNPC : MonoBehaviour
+    public class RaceNPC : RaceCharacter
     {
         Collider _collider;
         Rigidbody _rigidbody;
@@ -35,7 +35,7 @@ namespace SuperSport
         int _updateFrame;
         float _time;
         float _randomAccelerator;
-        
+
         void Awake()
         {
             _rigidbody = GetComponent<Rigidbody>();
@@ -78,6 +78,7 @@ namespace SuperSport
             _transform.localPosition = _startPos;
             _isUpdate = false;
             _updateFrame = 0;
+            Timer = 99.9f;
         }
 
         public void StartRun()

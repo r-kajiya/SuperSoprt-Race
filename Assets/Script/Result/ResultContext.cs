@@ -15,7 +15,8 @@ namespace SuperSport
         
         protected override IEnumerator DoPreLoad(SystemContextContainer container)
         {
-            _useCase = new ResultUseCase(resultPresenter, OnChangeTitle);
+            RaceContextContainer raceContextContainer = container as RaceContextContainer;
+            _useCase = new ResultUseCase(resultPresenter, raceContextContainer, OnChangeTitle);
             CameraManager.I.RequestCameraState(CameraStateType.Sky);
 
             yield break;

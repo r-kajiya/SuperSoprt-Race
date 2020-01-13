@@ -95,7 +95,9 @@
             <e p="WorldCamera.cs" t="Include" />
           </e>
           <e p="Race" t="Include">
+            <e p="RaceCharacter.cs" t="Include" />
             <e p="RaceContext.cs" t="Include" />
+            <e p="RaceContextContainer.cs" t="Include" />
             <e p="RaceGoal.cs" t="Include" />
             <e p="RaceNPC.cs" t="Include" />
             <e p="RacePlayer.cs" t="Include" />
