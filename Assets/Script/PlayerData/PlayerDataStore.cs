@@ -92,7 +92,7 @@ namespace SuperSport
 
             foreach (var entity in parse.Player)
             {
-                PlayerModel model = new PlayerModel(entity.UserID, entity.UserName, entity.RaceTime);
+                PlayerModel model = new PlayerModel(entity.UserID, entity.UserName, entity.RaceTime, entity.RaceLevel);
 
                 map.Add(model.ID, model);
             }

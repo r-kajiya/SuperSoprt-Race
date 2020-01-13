@@ -15,6 +15,16 @@ namespace SuperSport
             _presenter.RegisterGoFinalButton(onChangeRace);
             _presenter.RegisterGoRankButton(onChangeRace);
             _presenter.RegisterGoRankingButton(onOpenRanking);
+            
+            // プレイヤーデータの保存
+            PlayerRepository.I.GetOwner();
+            
+            PlayerModel playerModel = PlayerRepository.I.GetOwner();
+
+            if (playerModel == null)
+            {
+                //PlayerRepository.I.Save(new PlayerModel());
+            }
         }
     }
 }

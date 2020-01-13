@@ -22,6 +22,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/b9/e6828030/IList`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Singleton/MonoSingleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/54/2a91804e/IEquatable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Network/Firebase/FirebaseNetwork.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Container/SystemContextContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Input/TouchGuard.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,6 +66,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.3.4/Runtime/Behaviours/CinemachineBrain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Define/Editor/DefineSymbolWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Context/ApplicationContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Context/SystemContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceGoal.cs" root0="FORCE_HIGHLIGHTING" />
@@ -72,10 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Singleton/MonoSingleton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/ReactiveProperty.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Camera/CameraState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Camera/CameraStateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/StateMachine/StateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Sound/SoundPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Math/MathHelper.cs" />
@@ -101,7 +99,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Title/TitlePresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Title/TitleContextContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Input/TouchGuard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleUseCase.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Title/TitleContext.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingView.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingPresenter.cs" />
@@ -119,10 +116,15 @@
         <option value="$PROJECT_DIR$/Assets/Script/Result/ResultView.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Race/RaceUseCase.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Race/RaceNPC.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerEntity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerRepository.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerDataStore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleUseCase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Define/DefineSymbol.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Define/Editor/DefineSymbolWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Define/Editor/symbols.xml" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Network/Firebase/FirebaseNetwork.cs" />
       </list>
     </option>
   </component>
@@ -170,7 +172,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578718635985</updated>
-      <workItem from="1578718640641" duration="32493000" />
+      <workItem from="1578718640641" duration="34468000" />
     </task>
     <servers />
   </component>

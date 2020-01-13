@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Framework" t="Include">
@@ -37,6 +38,12 @@
                 <e p="DebugCanvas.cs" t="Include" />
               </e>
             </e>
+            <e p="Define" t="Include">
+              <e p="Editor" t="Include">
+                <e p="DefineSymbolWindow.cs" t="Include" />
+                <e p="symbols.xml" t="Include" />
+              </e>
+            </e>
             <e p="Entity" t="Include">
               <e p="IEntity.cs" t="Include" />
             </e>
@@ -52,6 +59,12 @@
             </e>
             <e p="Model" t="Include">
               <e p="IModel.cs" t="Include" />
+            </e>
+            <e p="Network" t="Include">
+              <e p="Firebase" t="Include">
+                <e p="FirebaseNetwork.cs" t="Include" />
+              </e>
+              <e p="Network.cs" t="Include" />
             </e>
             <e p="Presenter" t="Include">
               <e p="RootPresenter.cs" t="Include" />

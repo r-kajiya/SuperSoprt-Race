@@ -58,3 +58,10 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Firebase
+[Aa]ssets/Plugins*
+[Aa]ssets/PlayServicesResolver*
+[Aa]ssets/Firebase*
+[Aa]ssets/Editor Default Resources*
+[Aa]ssets/Parse*
+

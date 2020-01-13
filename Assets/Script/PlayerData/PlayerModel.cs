@@ -13,16 +13,19 @@ namespace SuperSport
         public string UserID { get; }
         public string UserName { get; }
         public string RaceTime { get; }
+        public int RaceLevel { get; }
 
         public PlayerModel(
             string userId,
             string userName,
-            string raceTime)
+            string raceTime,
+            int raceLevel)
         {
             ID = userId.GetHashCode();
             UserID = userId;
             UserName = userName;
             RaceTime = raceTime;
+            RaceLevel = raceLevel;
         }
     }
 }

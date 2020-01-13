@@ -32,17 +32,28 @@ namespace SuperSport
         }
         
         [SerializeField, HideInInspector]
-        string raceTime = "";
+        string raceTime = "99.9999";
 
         public string RaceTime
         {
             get { return raceTime; }
+        }
+        
+        [SerializeField, HideInInspector]
+        int raceLevel = 0;
+
+        public int RaceLevel
+        {
+            get { return raceLevel; }
         }
 
         public PlayerEntity(PlayerModel model)
         {
             id = model.ID;
             userID = model.UserID;
+            userName = model.UserName;
+            raceTime = model.RaceTime;
+            raceLevel = model.RaceLevel;
         }
     }
 }
