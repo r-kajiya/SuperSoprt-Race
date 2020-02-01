@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>804179046477-gnegbnvrka3po4dugeohuh0jjn5k8i9b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.804179046477-gnegbnvrka3po4dugeohuh0jjn5k8i9b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCvZlRGnM5NVjnY7j8lsw2GWZt7iee6yxc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>804179046477</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.KI.SuperSportRace</string>
+	<key>PROJECT_ID</key>
+	<string>super-suport-race</string>
+	<key>STORAGE_BUCKET</key>
+	<string>super-suport-race.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:804179046477:ios:bd50352aedbae16cd76c04</string>
+	<key>DATABASE_URL</key>
+	<string>https://super-suport-race.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,37 @@
+{
+  "client": [
+    {
+      "services": {
+        "appinvite_service": {
+          "status": 1
+        }, 
+        "analytics_service": {
+          "status": 0
+        }
+      }, 
+      "oauth_client": [
+        {
+          "client_id": "804179046477-gnegbnvrka3po4dugeohuh0jjn5k8i9b.apps.googleusercontent.com"
+        }
+      ], 
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvZlRGnM5NVjnY7j8lsw2GWZt7iee6yxc"
+        }
+      ], 
+      "client_info": {
+        "mobilesdk_app_id": "1:804179046477:ios:bd50352aedbae16cd76c04", 
+        "android_client_info": {
+          "package_name": "com.KI.SuperSportRace"
+        }
+      }
+    }
+  ], 
+  "configuration_version": "1", 
+  "project_info": {
+    "storage_bucket": "super-suport-race.appspot.com", 
+    "project_id": "super-suport-race", 
+    "firebase_url": "https://super-suport-race.firebaseio.com", 
+    "project_number": "804179046477"
+  }
+}
