@@ -7,9 +7,9 @@ namespace SuperSport
     public class RaceView : MonoBehaviour, IView
     {
         [SerializeField]
-        EasyAnimation _signalAnimation = null;
+        LegacyEasyAnimation _signalAnimation = null;
 
-        public EasyAnimation SignalAnimation => _signalAnimation;
+        public LegacyEasyAnimation SignalAnimation => _signalAnimation;
 
         [SerializeField]
         Button _accelerationArea = null;

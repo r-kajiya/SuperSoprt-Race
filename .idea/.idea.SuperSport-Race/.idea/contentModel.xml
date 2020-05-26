@@ -5,10 +5,54 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Firebase" t="Include">
+          <e p="Editor" t="Include">
+            <e p="AnalyticsDependencies.xml" t="Include" />
+            <e p="AppDependencies.xml" t="Include" />
+            <e p="AuthDependencies.xml" t="Include" />
+            <e p="DatabaseDependencies.xml" t="Include" />
+            <e p="FirebaseAnalytics_version-6.9.0_manifest.txt" t="Include" />
+            <e p="FirebaseAuth_version-6.9.0_manifest.txt" t="Include" />
+            <e p="FirebaseDatabase_version-6.9.0_manifest.txt" t="Include" />
+          </e>
+          <e p="m2repository" t="Include">
+            <e p="com" t="Include">
+              <e p="google" t="Include">
+                <e p="Firebase" t="Include">
+                  <e p="firebase-analytics-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                  <e p="firebase-app-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                  <e p="firebase-auth-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                  <e p="firebase-database-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Framework" t="Include">
           <e p="Script" t="Include">
             <e p="Animation" t="Include">
-              <e p="EasyAnimation.cs" t="Include" />
+              <e p="EasyAnimation" t="Include">
+                <e p="EasyAnimation.cs" t="Include" />
+                <e p="EasyAnimationPlayable.cs" t="Include" />
+                <e p="EasyAnimationSample.cs" t="Include" />
+                <e p="EasyAnimationState.cs" t="Include" />
+                <e p="EasyAnimationStateManager.cs" t="Include" />
+              </e>
+              <e p="LegacyEasyAnimation" t="Include">
+                <e p="LegacyEasyAnimation.cs" t="Include" />
+              </e>
+              <e p="SingleAnimation" t="Include">
+                <e p="SingleAnimation.cs" t="Include" />
+                <e p="SingleAnimationSample.cs" t="Include" />
+              </e>
             </e>
             <e p="Application" t="Include">
               <e p="Environment.cs" t="Include" />
@@ -62,7 +106,11 @@
             </e>
             <e p="Network" t="Include">
               <e p="Firebase" t="Include">
-                <e p="FirebaseNetwork.cs" t="Include" />
+                <e p="MFBFAnalytics.cs" t="Include" />
+                <e p="MFBFAuth.cs" t="Include" />
+                <e p="MFBFDatabase.cs" t="Include" />
+                <e p="MFBFNetwork.cs" t="Include" />
+                <e p="MFBFTest.cs" t="Include" />
               </e>
               <e p="Network.cs" t="Include" />
             </e>
@@ -97,6 +145,11 @@
             </e>
           </e>
         </e>
+        <e p="PlayServicesResolver" t="Include">
+          <e p="Editor" t="Include">
+            <e p="play-services-resolver_v1.2.133.0.txt" t="Include" />
+          </e>
+        </e>
         <e p="Script" t="Include">
           <e p="Camera" t="Include">
             <e p="CameraManager.cs" t="Include" />
@@ -110,6 +163,7 @@
           <e p="PlayerData" t="Include">
             <e p="PlayerDataStore.cs" t="Include" />
             <e p="PlayerEntity.cs" t="Include" />
+            <e p="PlayerEnvironment.cs" t="Include" />
             <e p="PlayerModel.cs" t="Include" />
             <e p="PlayerRepository.cs" t="Include" />
           </e>
@@ -137,6 +191,11 @@
               <e p="RankingUseCase.cs" t="Include" />
               <e p="RankingView.cs" t="Include" />
             </e>
+            <e p="Regist" t="Include">
+              <e p="RegistPresenter.cs" t="Include" />
+              <e p="RegistUseCase.cs" t="Include" />
+              <e p="RegistView.cs" t="Include" />
+            </e>
             <e p="TitleContext.cs" t="Include" />
             <e p="TitleContextContainer.cs" t="Include" />
             <e p="TitlePresenter.cs" t="Include" />
@@ -144,13 +203,16 @@
             <e p="TitleView.cs" t="Include" />
           </e>
         </e>
+        <e p="SkySerie Freebie" t="Include">
+          <e p="Hdri setup.txt" t="Include" />
+        </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="SuperSport-Race.sln" t="IncludeFlat" />
       <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_SuperSport-Race.-60181397.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_SuperSport-Race.-60181397.00" t="ExcludeRecursive" />
   </component>
 </project>

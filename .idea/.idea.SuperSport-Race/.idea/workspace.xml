@@ -8,136 +8,200 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceContextContainer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Sound/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Sound/SoundPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingPresenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceCharacter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/MathHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/VectorHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/Polar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/VectorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/b9/e6828030/IList`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Singleton/MonoSingleton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/54/2a91804e/IEquatable`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Network/Firebase/FirebaseNetwork.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Container/SystemContextContainer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Input/TouchGuard.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerData/PlayerRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Debug/View/DebugCanvas.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RacePlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Corutine/AbsolutelyActiveCorutine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Color/ColorUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Result/ResultContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerData/PlayerDataStore.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitlePresenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerData/PlayerEntity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerData/PlayerModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitleUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Result/ResultPresenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/CustomEqualityComparer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraStateTitle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/WorldCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Result/ResultView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Result/ResultUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraStateRace.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceNPC.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitleView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/599589BF-4CE2-4890-9B8A-14CBE4A2034E/27/12a8800d/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Network/Firebase/MFBFDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Network/Firebase/MFBFNetwork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Network/Network.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitlePresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2EC8B5DE-218E-4B5D-A53B-0B4448058123/23/38192ea5/Animator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Animation/SingleAnimation/SingleAnimationSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitleContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/ad/6982b3b7/IComparable`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/Observer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Debug/Log/DebugLog.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RacePresenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/36/134ac249/List`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/Subscribe.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Presenter/RootPresenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraStateSky.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitleContextContainer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/ReactiveProperty.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.3.4/Runtime/Behaviours/CinemachineBrain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitleUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerData/PlayerDataStore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerData/PlayerRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Application/Environment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Container/SystemContextContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/DataStore/IDataStore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Presenter/RootPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/dc/136518de/WrapMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Singleton/MonoSingleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Repository/IRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Repository/BaseRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2EC8B5DE-218E-4B5D-A53B-0B4448058123/a9/1e98c80b/IAnimationClipSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/ReactiveProperty.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/c5/e4e07a98/IPlayable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/Subscribe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/CustomEqualityComparer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/ReactiveProperty/Observer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/cc/1a2d4433/Playable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BuildSetting/google-services.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/f3/f65ed375/PlayState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RacePresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceContextContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation/EasyAnimationState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation/EasyAnimationPlayable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceGoal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/90/a55b5aad/PlayableBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceNPC.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/4e/bc32e463/IPlayableBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceCharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/fb/87132c5f/PlayableOutputExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RacePlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Debug/Resources/Debug/LogGridCell.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/TitleContextContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2EC8B5DE-218E-4B5D-A53B-0B4448058123/bc/64b211b6/AnimationClipPlayable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/590B07A0-8EBF-4FFE-9290-BF1366C3C513/ff/ad6babc8/PlayableHandle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Debug/Log/DebugLog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Debug/View/DebugCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D4ACD2E-70C0-4C51-866C-B4B6C1A77074/ce/581df7fd/FirebaseAnalytics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/Regist/RegistPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2EC8B5DE-218E-4B5D-A53B-0B4448058123/c2/f33041bc/AnimationPlayableUtilities.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/Regist/RegistUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/045C3D8C-C3B2-4360-931A-2F93E80827C4/3e/58042eb6/Task`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/Regist/RegistView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/8f/0ad6db78/PlayableGraph.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/81546B42-7182-4564-9565-83B10552FBE2/cc/34efbf8a/FirebaseAuth.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/1e/d6d98c90/DirectorUpdateMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraStateSky.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation/EasyAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B9B7AC4D-E54D-44E7-91A2-F62ACCE43661/30/20de959c/TaskExtension.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/MathHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/b0/7b629dc2/PlayableHandle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/VectorHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraStateTitle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AC14A74-2A86-4BD8-A2F2-398AAA506C26/d2/ec0a5fe2/DatabaseReference.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/Polar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Math/VectorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AC14A74-2A86-4BD8-A2F2-398AAA506C26/90/5e4c305b/DataSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/WorldCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Color/ColorUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraStateRace.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/b9/e6828030/IList`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2EC8B5DE-218E-4B5D-A53B-0B4448058123/32/a4b8eb9e/AnimationClip.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2EC8B5DE-218E-4B5D-A53B-0B4448058123/7f/1c5d9afe/AnimationPlayableOutput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/54/2a91804e/IEquatable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/01/5de1f99e/PlayableExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation/EasyAnimationSample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Animation/LegacyEasyAnimation/LegacyEasyAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Result/ResultPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AC14A74-2A86-4BD8-A2F2-398AAA506C26/a1/13e383dd/Query.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Result/ResultUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Animation/SingleAnimation/SingleAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerData/PlayerEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/fb/5cf61a01/PlayableGraph.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AC14A74-2A86-4BD8-A2F2-398AAA506C26/13/3efed3fd/FirebaseDatabase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/590B07A0-8EBF-4FFE-9290-BF1366C3C513/12/df38c3cd/IPlayable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerData/PlayerModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerData/PlayerEnvironment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Input/TouchGuard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/ad/6982b3b7/IComparable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Model/IModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Sound/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/36/134ac249/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Sound/SoundPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Define/Editor/DefineSymbolWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Context/ApplicationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Context/Context.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/590B07A0-8EBF-4FFE-9290-BF1366C3C513/eb/74d10a59/PlayableExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Context/SystemContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Race/RaceGoal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Network/Firebase/MFBFAuth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Network/Firebase/MFBFAnalytics.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Network/Firebase/MFBFTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/UseCase/IUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Corutine/AbsolutelyActiveCorutine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/f2/0f459943/PlayableBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2EC8B5DE-218E-4B5D-A53B-0B4448058123/79/5cb0cd2f/IAnimationClipSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation/EasyAnimationStateManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/69/d543b4df/PlayableExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/01/9ab8a61a/Playable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2EC8B5DE-218E-4B5D-A53B-0B4448058123/1e/875e481a/AnimationMixerPlayable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2EC8B5DE-218E-4B5D-A53B-0B4448058123/84/2430266e/AnimationPlayableUtilities.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/8b/e6d86bb1/PlayableHandle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingView.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/StateMachine/StateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Sound/SoundPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Math/MathHelper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Math/VectorHelper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Math/Polar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Math/VectorExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Sound/SoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Context/SystemContext.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateStart.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateRace.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateTitle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Camera/WorldCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateSky.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Camera/CameraStateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Debug/View/DebugCanvas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Corutine/AbsolutelyActiveCorutine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Title/TitlePresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleContextContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Framework/Script/Input/TouchGuard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleContext.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingUseCase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceContextContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Race/RaceContext.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Race/RaceCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Race/RacePresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Race/RacePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Race/RaceGoal.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Race/IRaceCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Result/ResultContext.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Result/ResultPresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultUseCase.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Result/ResultView.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Race/RaceUseCase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceNPC.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerRepository.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerEntity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerDataStore.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleUseCase.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Define/DefineSymbol.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Define/Editor/DefineSymbolWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Define/Editor/symbols.xml" />
         <option value="$PROJECT_DIR$/Assets/Framework/Script/Network/Firebase/FirebaseNetwork.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Title/Regist/RegistView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Title/Regist/RegistPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Network/Firebase/MFBFRealtimeDatabase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerEntity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Network/Firebase/MFBFTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Result/ResultUseCase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerEnvironment.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Title/Regist/RegistUseCase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Model/IModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Repository/BaseRepository.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Title/TitlePresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Network/Firebase/MFBFAuth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Network/Firebase/MFBFNetwork.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Network/Network.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Title/TitleUseCase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingUseCase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerDataStore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerData/PlayerRepository.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/LegacyEasyAnimation/LegacyEasyAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/SimpleAnimationComponent/SimpleAnimationPlayable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation/EasyAnimationStateInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Debug/View/DebugCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/SimpleAnimationComponent/SimpleAnimation_impl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/SimpleAnimationComponent/SimpleAnimationPlayable_States.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation/Editor/Sample/EasyAnimationSample.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/SingleAnimation/SingleAnimationSample.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation/EasyAnimationSample.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation/EasyAnimationStateManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/SingleAnimation/SingleAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation/EasyAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation/EasyAnimationState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Framework/Script/Animation/EasyAnimation/EasyAnimationPlayable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RacePlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Race/RaceNPC.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1WEdLwsG5NRchmMg8fM0qItW6k5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502036" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30017453" />
     <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -153,18 +217,6 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f7fdc697-1a0f-48d4-8a7f-21f46fb13323" name="Default Changelist" comment="" />
@@ -173,19 +225,126 @@
       <option name="presentableId" value="Default" />
       <updated>1578718635985</updated>
       <workItem from="1578718640641" duration="34468000" />
+      <workItem from="1586396541242" duration="639000" />
+      <workItem from="1586570922848" duration="3548000" />
+      <workItem from="1586662517477" duration="2815000" />
+      <workItem from="1586673370029" duration="9278000" />
+      <workItem from="1586846274842" duration="10160000" />
+      <workItem from="1588918636283" duration="19000" />
+      <workItem from="1588918705007" duration="728000" />
+      <workItem from="1588989601376" duration="23530000" />
+      <workItem from="1589612838910" duration="25593000" />
+      <workItem from="1590490852267" duration="1527000" />
+      <workItem from="1590492585356" duration="49000" />
+      <workItem from="1590492824263" duration="1337000" />
+      <workItem from="1590494488781" duration="747000" />
     </task>
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="547" y="301" width="698" height="486" key="find.popup" timestamp="1578887713573">
+    <state width="451" height="464" key="DebuggerActiveHint" timestamp="1589676642779">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
-    <state x="547" y="301" width="698" height="486" key="find.popup/0.23.1792.1042@0.23.1792.1042" timestamp="1578887713573" />
-    <state x="560" y="194" width="672" height="676" key="search.everywhere.popup" timestamp="1578806270733">
+    <state width="451" height="464" key="DebuggerActiveHint/0.23.1792.1042@0.23.1792.1042" timestamp="1589676642779" />
+    <state width="1750" height="378" key="GridCell.Tab.0.bottom" timestamp="1590492538266">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
-    <state x="560" y="194" width="672" height="676" key="search.everywhere.popup/0.23.1792.1042@0.23.1792.1042" timestamp="1578806270733" />
+    <state width="1750" height="378" key="GridCell.Tab.0.bottom/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538266" />
+    <state width="1750" height="378" key="GridCell.Tab.0.center" timestamp="1590492538266">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.0.center/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538266" />
+    <state width="1750" height="378" key="GridCell.Tab.0.left" timestamp="1590492538265">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.0.left/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538265" />
+    <state width="1750" height="378" key="GridCell.Tab.0.right" timestamp="1590492538266">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.0.right/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538266" />
+    <state width="1750" height="378" key="GridCell.Tab.1.bottom" timestamp="1590492538267">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.1.bottom/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538267" />
+    <state width="1750" height="378" key="GridCell.Tab.1.center" timestamp="1590492538266">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.1.center/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538266" />
+    <state width="1750" height="378" key="GridCell.Tab.1.left" timestamp="1590492538266">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.1.left/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538266" />
+    <state width="1750" height="378" key="GridCell.Tab.1.right" timestamp="1590492538267">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.1.right/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538267" />
+    <state width="1750" height="378" key="GridCell.Tab.2.bottom" timestamp="1590492538268">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.2.bottom/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538268" />
+    <state width="1750" height="378" key="GridCell.Tab.2.center" timestamp="1590492538267">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.2.center/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538267" />
+    <state width="1750" height="378" key="GridCell.Tab.2.left" timestamp="1590492538267">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.2.left/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538267" />
+    <state width="1750" height="378" key="GridCell.Tab.2.right" timestamp="1590492538267">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.2.right/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538267" />
+    <state width="1750" height="378" key="GridCell.Tab.3.bottom" timestamp="1590492538268">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.3.bottom/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538268" />
+    <state width="1750" height="378" key="GridCell.Tab.3.center" timestamp="1590492538268">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.3.center/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538268" />
+    <state width="1750" height="378" key="GridCell.Tab.3.left" timestamp="1590492538268">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.3.left/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538268" />
+    <state width="1750" height="378" key="GridCell.Tab.3.right" timestamp="1590492538268">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state width="1750" height="378" key="GridCell.Tab.3.right/0.23.1792.1042@0.23.1792.1042" timestamp="1590492538268" />
+    <state x="354" y="142" width="1258" height="807" key="SettingsEditor" timestamp="1589691957684">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state x="354" y="142" width="1258" height="807" key="SettingsEditor/0.23.1792.1042@0.23.1792.1042" timestamp="1589691957684" />
+    <state x="547" y="301" width="802" height="486" key="find.popup" timestamp="1586856966016">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state x="547" y="301" width="802" height="486" key="find.popup/0.23.1792.1042@0.23.1792.1042" timestamp="1586856966016" />
+    <state x="560" y="194" width="672" height="676" key="search.everywhere.popup" timestamp="1590494711736">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state x="560" y="194" width="672" height="676" key="search.everywhere.popup/0.23.1792.1042@0.23.1792.1042" timestamp="1590494711736" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingUseCase.cs</url>
+          <line>34</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Script/Title/Ranking/RankingUseCase.cs" initialLine="34">
+            <startOffsets>
+              <option value="786" />
+            </startOffsets>
+            <endOffsets>
+              <option value="814" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

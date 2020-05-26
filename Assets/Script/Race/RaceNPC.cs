@@ -12,6 +12,7 @@ namespace SuperSport
         Rigidbody _rigidbody;
         Transform _transform;
         Renderer _renderer;
+        Vector3 _defaultPosition;
         
         [Serializable]
         public class Boost
@@ -27,9 +28,9 @@ namespace SuperSport
 
         [SerializeField]
         List<Boost> _boosts = new List<Boost>();
-
+        
         [SerializeField]
-        Vector3 _startPos = Vector3.zero;
+        EasyAnimation _easyAnimation;
 
         bool _isUpdate;
         int _updateFrame;
@@ -45,6 +46,8 @@ namespace SuperSport
             _isUpdate = false;
             _time = 0;
             _randomAccelerator = UnityEngine.Random.Range(0, 1);
+            _defaultPosition = _transform.position;
+            _easyAnimation.Initialize();
         }
 
         void Update()
@@ -63,6 +66,8 @@ namespace SuperSport
 
                 _updateFrame++;
                 _time += Time.deltaTime;
+                
+                _easyAnimation.SetSpeed(_rigidbody.velocity.magnitude);
             }
         }
 
@@ -75,7 +80,7 @@ namespace SuperSport
         {
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.angularVelocity = Vector3.zero;
-            _transform.localPosition = _startPos;
+            _transform.position = _defaultPosition;
             _isUpdate = false;
             _updateFrame = 0;
             Timer = 99.9f;
@@ -85,12 +90,15 @@ namespace SuperSport
         {
             _isUpdate = true;
             _updateFrame = 0;
+            _easyAnimation.CrossFade(1, 0, 0.5f);
         }
 
         public void StopRun()
         {
             _isUpdate = false;
             DebugLog.Normal($"{gameObject.name}の更新回数:{_updateFrame}, 記録:{_time}");
+            _easyAnimation.CrossFade(0, 0, 2);
+            _easyAnimation.SetSpeed(1);
         }
 
         public void Disable()

@@ -3,19 +3,21 @@ using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 using Framework;
+using Network = Framework.Network;
 
 namespace SuperSport
 {
     public class PlayerDataStore : IDataStore<PlayerModel>
     {
         const string FILE_PATH = "player.json";
+        const string DATABASE_KEY = "Users";
 
         [Serializable]
-        private class Entities
+        class Entities
         {
             public PlayerEntity[] Player = null;
 
-            public static Entities Convert(Dictionary<int, PlayerModel> map)
+            public static Entities ConvertFromMap(Dictionary<int, PlayerModel> map)
             {
                 Entities entities = new Entities();
                 entities.Player = new PlayerEntity[map.Count];
@@ -26,6 +28,13 @@ namespace SuperSport
                     entities.Player[index] = new PlayerEntity(model);
                     index++;
                 }
+
+                return entities;
+            }
+            
+            public static Entities ConvertFromJson(string json)
+            {
+                Entities entities =  JsonUtility.FromJson<Entities>(json);
 
                 return entities;
             }
@@ -43,29 +52,19 @@ namespace SuperSport
             {
                 map.Add(model.ID, model);
             }
-            
-            string json = JsonUtility.ToJson (Entities.Convert(map));
+
+            string json = JsonUtility.ToJson (Entities.ConvertFromMap(map));
             SavePlayerData(json);
+
+            if (map[model.ID].RaceLevel == PlayerEnvironment.RANK_RACE_LEVEL)
+            {
+                CommitPlayerData(map[model.ID].UserID, json);
+            }
         }
 
         public void SaveList(List<PlayerModel> models)
         {
-            Dictionary<int, PlayerModel> map = Load();
-            
-            foreach (var model in models)
-            {
-                if (map.ContainsKey(model.ID))
-                {
-                    map[model.ID] = model;
-                }
-                else
-                {
-                    map.Add(model.ID, model);
-                }
-            }
-            
-            string json = JsonUtility.ToJson (Entities.Convert(map));
-            SavePlayerData(json);
+            DebugLog.Warning("PlayerDataはSaveListを使用できません");
         }
 
         public Dictionary<int, PlayerModel> Load()
@@ -100,6 +99,18 @@ namespace SuperSport
             return map;
         }
 
+        public void FetchOrderByFirst(string sortKey, int fetchCount, Action<List<PlayerModel>> onSuccess)
+        {
+            Action<string> onComplete = json =>
+            {
+                DebugLog.Warning("いけて");
+                // var list = ConvertList(Entities.ConvertFromJson(json));
+                onSuccess.Invoke(null);
+            };
+            
+            Network.GetOrderByFirst(DATABASE_KEY, sortKey, fetchCount, onComplete, null);
+        }
+
         void SavePlayerData(string json)
         {
             string filePath = $"{Application.persistentDataPath}/{FILE_PATH}";
@@ -111,9 +122,27 @@ namespace SuperSport
             DebugLog.Normal(this.GetType() + "を保存しました。" + filePath);
         }
 
+        void CommitPlayerData(string userID, string json)
+        {
+            Network.SetById(DATABASE_KEY, userID, json, null, null);
+        }
+
         bool Exists()
         {
             return File.Exists($"{Application.persistentDataPath}/{FILE_PATH}");
+        }
+
+        List<PlayerModel> ConvertList(Entities entities)
+        {
+            List<PlayerModel> list = new List<PlayerModel>();
+
+            foreach (var entity in entities.Player)
+            {
+                PlayerModel model = new PlayerModel(entity.UserID, entity.UserName, entity.RaceTime, entity.RaceLevel);
+                list.Add(model);
+            }
+            
+            return list;
         }
         
     }

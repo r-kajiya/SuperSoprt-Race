@@ -9,20 +9,8 @@ namespace SuperSport
     {
         [SerializeField]
         RankingView _view = null;
-        
-        public class User
-        {
-            public string UserName { get; }
-            public float Time { get; }
 
-            public User(string userName, float time)
-            {
-                UserName = userName;
-                Time = time;
-            }
-        }
-
-        public void SetRanking(List<User> rankingUsers)
+        public void SetRanking(List<PlayerModel> rankingUsers)
         {
             
         }

@@ -2,26 +2,28 @@
 
 namespace SuperSport
 {
-    public interface IPlayerModel : IModel
+    public class PlayerModelBase : ModelBase
     {
         
     }
 
-    public class PlayerModel : IPlayerModel
+    public class PlayerModel : PlayerModelBase
     {
         public int ID { get; }
         public string UserID { get; }
         public string UserName { get; }
-        public string RaceTime { get; }
+        public float RaceTime { get; }
         public int RaceLevel { get; }
 
         public PlayerModel(
             string userId,
             string userName,
-            string raceTime,
+            float raceTime,
             int raceLevel)
         {
-            ID = userId.GetHashCode();
+            // プレイヤーデータはひとつなのでIDは必ず0
+            // 識別はUserIdで
+            ID = 0;
             UserID = userId;
             UserName = userName;
             RaceTime = raceTime;

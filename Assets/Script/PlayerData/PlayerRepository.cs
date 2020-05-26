@@ -1,8 +1,10 @@
 ﻿using Framework;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace SuperSport
 {
-    public class PlayerRepository : BaseRepository<PlayerModel, PlayerEntity, PlayerDataStore>
+    public class PlayerRepository : BaseRepository<PlayerModel, PlayerDataStore>
     {
         public static PlayerRepository I { get; }
 
@@ -15,13 +17,13 @@ namespace SuperSport
 
         public PlayerModel GetOwner()
         {
-            var list = base.GetAll();
-            if (list.Count == 0)
-            {
-                return null;
-            }
-            
-            return list[0];
+            return base.Get(0);
         }
+
+        public void GetRankingList(System.Action<List<PlayerModel>> onSuccess)
+        {
+            dataStore.FetchOrderByFirst("raceTime", 5, a => { DebugLog.Normal("aa");});
+        }
+
     }
 }

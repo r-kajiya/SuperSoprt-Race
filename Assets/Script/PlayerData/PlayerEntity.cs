@@ -32,9 +32,9 @@ namespace SuperSport
         }
         
         [SerializeField, HideInInspector]
-        string raceTime = "99.9999";
+        float raceTime = PlayerEnvironment.DEFAULT_RACE_TIME;
 
-        public string RaceTime
+        public float RaceTime
         {
             get { return raceTime; }
         }
