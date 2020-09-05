@@ -91,7 +91,7 @@ namespace SuperSport
 
             foreach (var entity in parse.Player)
             {
-                PlayerModel model = new PlayerModel(entity.UserID, entity.UserName, entity.RaceTime, entity.RaceLevel);
+                PlayerModel model = new PlayerModel(entity.UserID, entity.UserName, entity.RaceTime, entity.RaceLevel, entity.Acceleration, entity.Fastest, entity.InitialVelocity);
 
                 map.Add(model.ID, model);
             }
@@ -103,7 +103,6 @@ namespace SuperSport
         {
             Action<string> onComplete = json =>
             {
-                DebugLog.Warning("いけて");
                 // var list = ConvertList(Entities.ConvertFromJson(json));
                 onSuccess.Invoke(null);
             };
@@ -138,7 +137,7 @@ namespace SuperSport
 
             foreach (var entity in entities.Player)
             {
-                PlayerModel model = new PlayerModel(entity.UserID, entity.UserName, entity.RaceTime, entity.RaceLevel);
+                PlayerModel model = new PlayerModel(entity.UserID, entity.UserName, entity.RaceTime, entity.RaceLevel, entity.Acceleration, entity.Fastest, entity.InitialVelocity);
                 list.Add(model);
             }
             

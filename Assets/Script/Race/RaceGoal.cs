@@ -5,22 +5,16 @@ namespace SuperSport
 {
     public class RaceGoal : MonoBehaviour
     {
-        Action<RaceCharacter> _onEnter;
+        Action<bool> _onEnter;
         
-        public void RegisterEnter(Action<RaceCharacter> onEnter)
+        public void RegisterEnter(Action<bool> onEnter)
         {
             _onEnter = onEnter;
         }
         
         void OnTriggerEnter(Collider other)
         {
-            RaceCharacter raceCharacter = other.GetComponent<RaceCharacter>();
-            if (raceCharacter == null)
-            {
-                return;
-            }
-            
-            _onEnter?.Invoke(raceCharacter);
+            _onEnter?.Invoke(true);
         }
     }
 }

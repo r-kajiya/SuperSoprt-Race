@@ -16,12 +16,6 @@ namespace SuperSport
 
         public void Open()
         {
-            if (!Network.DidAnonymouslyLoggedIn)
-            {
-                DebugLog.Error("ログインしていないため、ランキングを開けません");
-                return;
-            }
-            
             PlayerRepository.I.GetRankingList(OnGetRanking);
         }
 

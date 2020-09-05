@@ -7,28 +7,23 @@ namespace SuperSport
     public class TitleView : MonoBehaviour, IView
     {
         [SerializeField]
-        Button _goQualifying = null;
+        Button _goRace = null;
         
-        public Button GoQualifying => _goQualifying;
-        
-        [SerializeField]
-        Button _goSemifinal = null;
-        
-        public Button GoSemifinal => _goSemifinal;
+        public Button GoRace => _goRace;
         
         [SerializeField]
-        Button _goFinal = null;
+        Button _goTraining = null;
         
-        public Button GoFinal => _goFinal;
+        public Button GoTraining => _goTraining;
+
+        [SerializeField]
+        Button _goParameter = null;
+        
+        public Button GoParameter => _goParameter;
         
         [SerializeField]
-        Button _goRank = null;
+        GameObject _selectRace = null;
         
-        public Button GoRank => _goRank;
-        
-        [SerializeField]
-        Button _goRanking = null;
-        
-        public Button GoRanking => _goRanking;
+        public GameObject SelectRace => _selectRace;
     }
 }

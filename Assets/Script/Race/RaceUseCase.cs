@@ -7,9 +7,8 @@ namespace SuperSport
     public class RaceUseCase : IUseCase
     {
         readonly RacePresenter _presenter;
-        readonly RacePlayer _racePlayer;
-        readonly RaceNPC[] _raceNpcs;
-        readonly Action<bool, float, bool> _onChangeResult;
+        readonly RacePlayerQWOP _racePlayerQWOP;
+        readonly Action<bool, float, bool, float> _onChangeResult;
         readonly Action _onChangeTitle;
         readonly RaceGoal _raceGoal;
         
@@ -17,31 +16,26 @@ namespace SuperSport
         bool _isStart;
         bool _isTapped;
         int _tapCount;
-        RaceType _raceType;
         bool _isGoal;
-
-        public RaceUseCase(RacePresenter presenter, RacePlayer racePlayer, RaceGoal raceGoal, RaceNPC[] raceNpcs, RaceType raceType, Action<bool, float, bool> onChangeResult, Action onChangeTitle)
+        bool _isTraining;
+        float _initialVelocity;
+        int _selectRace;
+        
+        public RaceUseCase(RacePresenter presenter, RacePlayerQWOP racePlayerQWOP, RaceGoal raceGoal, Action<bool, float, bool, float> onChangeResult, Action onChangeTitle, int selectRace)
         {
             _presenter = presenter;
-            _racePlayer = racePlayer;
-            _raceNpcs = raceNpcs;
+            _racePlayerQWOP = racePlayerQWOP;
             _onChangeResult = onChangeResult;
             _onChangeTitle = onChangeTitle;
             _raceGoal = raceGoal;
             _raceGoal.RegisterEnter(OnGoal);
-            _presenter.RegisterAccelerationArea(OnAccelerator);
-            _presenter.Setup();
-            _startTime = 0f;
-            _tapCount = 0;
-            _isStart = false;
-            _raceType = raceType;
-            _isGoal = false;
             
-            _racePlayer.SetupStart();
-            foreach (var raceNpc in _raceNpcs)
-            {
-                raceNpc.SetupStart();
-            }
+            _racePlayerQWOP.Setup(OnGoal);
+            _presenter.Setup(_racePlayerQWOP);
+            _presenter.RegisterLeftUpper(OnAccelerationLeftUpper);
+            _presenter.RegisterRightUpper(OnAccelerationRightUpper);
+            _presenter.RegisterLeftLower(OnAccelerationLeftLower);
+            _presenter.RegisterRightLower(OnAccelerationRightLower);
 
             AbsolutelyActiveCorutine.WaitSecondInvoke(() =>
             {
@@ -51,93 +45,59 @@ namespace SuperSport
                     _startTime = Time.realtimeSinceStartup;
                     _isStart = true;
                     _presenter.StartTime();
-                    foreach (var _raceNpc in _raceNpcs)
-                    {
-                        _raceNpc.StartRun();
-                    }
+                    _racePlayerQWOP.Go();
                 });
             },1.5f);
+
+            _startTime = 0f;
+            _tapCount = 0;
+            _isStart = false;
+            _isGoal = false;
+            _selectRace = selectRace;
         }
 
-        void OnAccelerator()
+        void OnAccelerationLeftUpper()
         {
-            float boost = 1f;
-            float diff = 1f;
-
-            if (!_isTapped)
-            {
-                diff = Time.realtimeSinceStartup - _startTime;
-                _isTapped = true;
-            }
-
-            if (!_isStart)
-            {
-                if (_isTapped)
-                {
-                    DebugLog.Normal("お手つき：ブーストされない");
-                }
-                return;
-            }
-
-            _tapCount++;
-            
-            if (diff < 0.01f)
-            {
-                boost = 10f;
-            }
-            else if (diff < 0.02f)
-            {
-                boost = 8f;
-            }
-            else if (diff < 0.05f)
-            {
-                boost = 6f;
-            }
-            else if (diff < 0.1f)
-            {
-                boost = 5f;
-            }
-            else if (diff < 0.2f)
-            {
-                boost = 3f;
-            }
-            else if (diff < 0.5f)
-            {
-                boost = 2f;
-            }
-            else if (diff < 1.0f)
-            {
-                boost = 1.5f;
-            }
-
-            if (boost > 1.0f)
-            {
-                DebugLog.Normal($"ブースト：{boost:F2}倍, 差分:{diff:F4}");
-            }
-
-            _racePlayer.Accelerator(boost);
+            _racePlayerQWOP.OnLeftUpper();
+        }
+        
+        void OnAccelerationRightUpper()
+        {
+            _racePlayerQWOP.OnRightUpper();
+        }
+        
+        void OnAccelerationLeftLower()
+        {
+            _racePlayerQWOP.OnLeftLower();
+        }
+        
+        void OnAccelerationRightLower()
+        {
+            _racePlayerQWOP.OnRightLower();
         }
 
-        void OnGoal(RaceCharacter raceCharacter)
+        void OnGoal(bool isWin)
         {
-            bool isWin = raceCharacter == _racePlayer && !_isGoal;
-            _isGoal = true;
-
-            if (_raceNpcs != null)
-            {
-                foreach (var _raceNpc in _raceNpcs)
-                {
-                    _raceNpc.StopRun();
-                }
-            }
-
-            DebugLog.Normal($"タップ回数：{_tapCount}");
-            
             float time = _presenter.GetTime();
-            bool isRank = _raceType == RaceType.Rank;
-            _onChangeResult?.Invoke(isWin, time, isRank);
+            float length = _racePlayerQWOP.Length();
+            _onChangeResult?.Invoke(isWin, time, _isTraining, length);
             _raceGoal.RegisterEnter(null);
             _presenter.StopTime();
+
+            if (isWin)
+            {
+                var owner = PlayerRepository.I.GetOwner();
+
+                if (owner == null)
+                {
+                    PlayerRepository.I.Save(new PlayerModel("","",time, _selectRace+1, 0, 0, 0));
+                }
+
+                if (owner.RaceLevel == _selectRace)
+                {
+                    PlayerRepository.I.Save(new PlayerModel("","",time, _selectRace+1, 0, 0, 0));
+                }
+            }
         }
     }
 }

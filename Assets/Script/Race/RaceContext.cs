@@ -1,5 +1,6 @@
 using Framework;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace SuperSport
@@ -14,39 +15,26 @@ namespace SuperSport
         RaceUseCase _useCase;
 
         [SerializeField]
-        RacePlayer _racePlayer = null;
+        RacePlayerQWOP _racePlayerQWOP = null;
         
         [SerializeField]
         RaceGoal _raceGoal = null;
-        
+
         [SerializeField]
-        RaceNPC[] _qualifying = null;
-        
+        List<GameObject> _stageList;
+
         protected override IEnumerator DoPreLoad(SystemContextContainer container)
         {
             TitleContextContainer titleContextContainer = container as TitleContextContainer;
 
-            RaceNPC[] entries = null;
-
-            switch (titleContextContainer.RaceType)
-            {
-                case RaceType.Qualifying:
-                    entries = _qualifying;
-                    break;
-                case RaceType.Semifinal:
-                    entries = _qualifying;
-                    break;
-                case RaceType.Final:
-                    entries = _qualifying;
-                    break;
-                case RaceType.Rank:
-                    entries = _qualifying;
-                    break;
-            }
-
-            _useCase = new RaceUseCase(racePresenter, _racePlayer, _raceGoal, entries, titleContextContainer.RaceType, OnChangeResult, OnChangeTitle);
+            _useCase = new RaceUseCase(racePresenter, _racePlayerQWOP, _raceGoal, OnChangeResult, OnChangeTitle, titleContextContainer.SelectRace);
             
             CameraManager.I.RequestCameraState(CameraStateType.Race);
+
+            for (int i = 0; i < _stageList.Count; i++)
+            {
+                _stageList[i].SetActive(i == titleContextContainer.SelectRace); 
+            }
 
             yield break;
         }
@@ -81,9 +69,11 @@ namespace SuperSport
             ChangeContext(SystemContexts["TitleContext"]);
         }
         
-        void OnChangeResult(bool isWin, float time, bool isRank)
+        void OnChangeResult(bool isWin, float time, bool isTraining, float length)
         {
-            ChangeContext(SystemContexts["ResultContext"], new RaceContextContainer(isWin, time, isRank));
+            ChangeContext(SystemContexts["ResultContext"], new RaceContextContainer(isWin, time, isTraining, length));
+            
+            AdManager.I.Show();
         }
     }
 }

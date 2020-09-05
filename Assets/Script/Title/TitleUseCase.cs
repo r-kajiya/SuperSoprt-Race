@@ -6,60 +6,25 @@ namespace SuperSport
     public class TitleUseCase : IUseCase
     {
         readonly TitlePresenter _presenter;
-        Action<RaceType> _onChangeRace;
-        Action _onOpenRanking;
+        Action<int> _onChangeRace;
+        StageSelectUseCase _stageSelectUseCase;
 
-        public TitleUseCase(TitlePresenter presenter, Action<RaceType> onChangeRace, Action onOpenRanking)
+        public TitleUseCase(TitlePresenter presenter, StageSelectPresenter stageSelectPresenter, Action<int> onChangeRace)
         {
             _presenter = presenter;
+            _stageSelectUseCase = new StageSelectUseCase(stageSelectPresenter, OnChangeRace);
             _onChangeRace = onChangeRace;
-            _onOpenRanking = onOpenRanking;
-            _presenter.AllDeActive();
-            _presenter.RegisterGoQualifyingButton(onChangeRace, true);
-            Login();
+            _presenter.RegisterGoRaceButton(OnOpenStageSelect);
         }
 
-        void Login()
+        void OnOpenStageSelect()
         {
-            if (Network.DidAnonymouslyLoggedIn)
-            {
-                AfterLogin(PlayerRepository.I.GetOwner());
-                return;
-            }
-            
-            Network.SignInAnonymously(userId =>
-            {
-                PlayerModel model = PlayerRepository.I.GetOwner();
-
-                if (model == null)
-                {
-                    model = new PlayerModel(userId, "",  PlayerEnvironment.DEFAULT_RACE_TIME, PlayerEnvironment.QUALIFYING_RACE_LEVEL);
-                }
-                
-                PlayerRepository.I.Save(model);
-
-                AfterLogin(model);
-            });
+            _stageSelectUseCase.Open();
         }
 
-        void AfterLogin(PlayerModel playerModel)
+        void OnChangeRace(int selectRace)
         {
-            if (playerModel.RaceLevel == PlayerEnvironment.SEMIFINAL_RACE_LEVEL)
-            {
-                _presenter.RegisterGoSemifinalButton(_onChangeRace, true);
-            }
-            
-            if (playerModel.RaceLevel == PlayerEnvironment.FINAL_RACE_LEVEL)
-            {
-                _presenter.RegisterGoFinalButton(_onChangeRace, true);
-            }
-            
-            if (playerModel.RaceLevel == PlayerEnvironment.RANK_RACE_LEVEL)
-            {
-                _presenter.RegisterGoRankButton(_onChangeRace, true);
-            }
-            
-            _presenter.RegisterGoRankingButton(_onOpenRanking, true);
+            _onChangeRace?.Invoke(selectRace);
         }
     }
 }

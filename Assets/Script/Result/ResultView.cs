@@ -22,8 +22,18 @@ namespace SuperSport
         public GameObject Lose => _lose;
         
         [SerializeField]
+        GameObject _training = null;
+        
+        public GameObject Training => _training;
+        
+        [SerializeField]
         Text _timeText = null;
         
         public Text TimeText => _timeText;
+        
+        [SerializeField]
+        Text _lengthText = null;
+        
+        public Text LengthText => _lengthText;
     }
 }

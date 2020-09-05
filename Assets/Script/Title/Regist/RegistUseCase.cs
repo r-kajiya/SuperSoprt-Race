@@ -42,8 +42,8 @@ namespace SuperSport
         {
             Network.SignInAnonymously(userId =>
             {
-                PlayerModel model = new PlayerModel(userId, userName,  PlayerEnvironment.DEFAULT_RACE_TIME, PlayerEnvironment.RANK_RACE_LEVEL);
-                PlayerRepository.I.Save(model);
+                // PlayerModel model = new PlayerModel(userId, userName,  PlayerEnvironment.DEFAULT_RACE_TIME, PlayerEnvironment.RANK_RACE_LEVEL);
+                // PlayerRepository.I.Save(model);
             });
         }
         

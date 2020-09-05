@@ -4,12 +4,13 @@ namespace SuperSport
 {
     public class TitleContextContainer : SystemContextContainer
     {
-        public RaceType RaceType { get; }
-
-        public TitleContextContainer(RaceType raceType)
-        {
-            RaceType = raceType;
+        public int SelectRace {
+            get;
         }
-        
+
+        public TitleContextContainer(int selectRace)
+        {
+            SelectRace = selectRace;
+        }
     }
 }

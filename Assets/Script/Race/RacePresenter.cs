@@ -15,9 +15,13 @@ namespace SuperSport
 
         bool _measuring;
 
-        public void Setup()
+        RacePlayerQWOP _racePlayerQwop;
+
+        public void Setup(RacePlayerQWOP racePlayerQwop)
         {
             _view.Time.gameObject.SetActive(false);
+            _view.Length.gameObject.SetActive(false);
+            _racePlayerQwop = racePlayerQwop;
         }
 
         public void PlaySignal(Action onFinish)
@@ -26,16 +30,41 @@ namespace SuperSport
             _view.SignalAnimation.Play("UIStartSignal");
         }
         
-        public void RegisterAccelerationArea(Action onAction)
+        public void RegisterLeftUpper(Action onAction)
         {
-            _view.AccelerationArea.onClick.RemoveAllListeners();
-            _view.AccelerationArea.onClick.AddListener(() => { onAction?.Invoke(); });
+            _view.LeftUpper.onClick.RemoveAllListeners();
+            _view.LeftUpper.onClick.AddListener(() => { onAction?.Invoke(); });
+        }
+        
+        public void RegisterRightUpper(Action onAction)
+        {
+            _view.RightUpper.onClick.RemoveAllListeners();
+            _view.RightUpper.onClick.AddListener(() => { onAction?.Invoke(); });
+        }
+        
+        public void RegisterLeftLower(Action onAction)
+        {
+            _view.LeftLower.onClick.RemoveAllListeners();
+            _view.LeftLower.onClick.AddListener(() => { onAction?.Invoke(); });
+        }
+        
+        public void RegisterRightLower(Action onAction)
+        {
+            _view.RightLower.onClick.RemoveAllListeners();
+            _view.RightLower.onClick.AddListener(() => { onAction?.Invoke(); });
+        }
+
+        public void SetLength(float length)
+        {
+            _view.Length.text = string.Format("{0:F4}", length);
         }
 
         public void StartTime()
         {
             _measuring = true;
             _view.Time.gameObject.SetActive(true);
+            _view.Length.gameObject.SetActive(true);
+            SetLength(0);
             _view.Time.text = string.Format("{0:F4}", _timer);
             AbsolutelyActiveCorutine.Subscribe(UpdateTime());
         }
@@ -64,6 +93,7 @@ namespace SuperSport
                 
                 _timer += Time.deltaTime;
                 _view.Time.text = string.Format("{0:F3}", _timer);
+                SetLength(_racePlayerQwop.Length());
                 
                 yield return null;
             }

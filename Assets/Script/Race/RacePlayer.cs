@@ -14,11 +14,14 @@ namespace SuperSport
         float _addForce = 100f;
 
         [SerializeField]
-        EasyAnimation _easyAnimation;
+        EasyAnimation _easyAnimation = null;
 
         Vector3 _defaultPosition;
 
         bool _isRunning;
+
+        float _acceleration;
+        float _fastest;
 
         void Awake()
         {
@@ -30,7 +33,12 @@ namespace SuperSport
 
         public void Accelerator(float boost)
         {
-            _rigidbody.AddForce(new Vector3(_addForce, 0f, 0f));
+            if (_rigidbody.velocity.magnitude > _fastest)
+            {
+                return;
+            }
+            
+            _rigidbody.AddForce(new Vector3((_addForce + _acceleration) * boost, 0f, 0f));
             
             if (!_isRunning)
             {
@@ -59,17 +67,19 @@ namespace SuperSport
                 }
                 else
                 {
-                    _easyAnimation.SetSpeed(_rigidbody.velocity.magnitude * 2f);
+                    _easyAnimation.SetSpeed(_rigidbody.velocity.magnitude * 3f);
                 }
             }
         }
 
-        public void SetupStart()
+        public void SetupStart(int acceleration, int fastest)
         {
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.angularVelocity = Vector3.zero;
             _transform.position = _defaultPosition;
             Timer = 99.9f;
+            _acceleration = (float)acceleration / 200;
+            _fastest = fastest + 40;
         }
     }
 }

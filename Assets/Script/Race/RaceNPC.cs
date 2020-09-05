@@ -30,7 +30,7 @@ namespace SuperSport
         List<Boost> _boosts = new List<Boost>();
         
         [SerializeField]
-        EasyAnimation _easyAnimation;
+        EasyAnimation _easyAnimation = null;
 
         bool _isUpdate;
         int _updateFrame;
@@ -41,7 +41,7 @@ namespace SuperSport
         {
             _rigidbody = GetComponent<Rigidbody>();
             _transform = GetComponent<Transform>();
-            _renderer = GetComponent<Renderer>();
+            _renderer = GetComponentInChildren<Renderer>();
             _collider = GetComponent<Collider>();
             _isUpdate = false;
             _time = 0;
@@ -67,7 +67,7 @@ namespace SuperSport
                 _updateFrame++;
                 _time += Time.deltaTime;
                 
-                _easyAnimation.SetSpeed(_rigidbody.velocity.magnitude);
+                _easyAnimation.SetSpeed(_rigidbody.velocity.magnitude * 0.3f);
             }
         }
 
@@ -76,7 +76,7 @@ namespace SuperSport
             _rigidbody.AddForce(new Vector3((_addForce + _randomAccelerator) * boost, 0f, 0f));
         }
 
-        public void SetupStart()
+        public void SetupStart(float force)
         {
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.angularVelocity = Vector3.zero;
@@ -84,6 +84,7 @@ namespace SuperSport
             _isUpdate = false;
             _updateFrame = 0;
             Timer = 99.9f;
+            _addForce = force;
         }
 
         public void StartRun()

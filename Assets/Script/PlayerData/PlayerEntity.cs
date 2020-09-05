@@ -46,6 +46,30 @@ namespace SuperSport
         {
             get { return raceLevel; }
         }
+        
+        [SerializeField, HideInInspector]
+        int acceleration = 0;
+
+        public int Acceleration
+        {
+            get { return acceleration; }
+        }
+        
+        [SerializeField, HideInInspector]
+        int fastest = 0;
+
+        public int Fastest
+        {
+            get { return fastest; }
+        }
+        
+        [SerializeField, HideInInspector]
+        int initialVelocity = 0;
+
+        public int InitialVelocity
+        {
+            get { return initialVelocity; }
+        }
 
         public PlayerEntity(PlayerModel model)
         {
@@ -54,6 +78,9 @@ namespace SuperSport
             userName = model.UserName;
             raceTime = model.RaceTime;
             raceLevel = model.RaceLevel;
+            acceleration = model.Acceleration;
+            fastest = model.Fastest;
+            initialVelocity = model.InitialVelocity;
         }
     }
 }

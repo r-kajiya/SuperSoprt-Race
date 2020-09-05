@@ -9,78 +9,22 @@ namespace SuperSport
         [SerializeField]
         TitleView _view = null;
 
-        public void AllDeActive()
+        public void RegisterGoRaceButton(Action onAction)
         {
-            _view.GoQualifying.interactable = false;
-            _view.GoSemifinal.interactable = false;
-            _view.GoFinal.interactable = false;
-            _view.GoRank.interactable = false;
-            _view.GoRanking.interactable = false;
+            _view.GoRace.onClick.RemoveAllListeners();
+            _view.GoRace.onClick.AddListener(() => { onAction?.Invoke(); });
         }
 
-        public void RegisterGoQualifyingButton(Action<RaceType> onAction, bool active)
+        public void RegisterGoTrainingButton(Action onAction)
         {
-            _view.GoQualifying.interactable = active;
-
-            if (!active)
-            {
-                return;
-            }
-            
-            _view.GoQualifying.onClick.RemoveAllListeners();
-            _view.GoQualifying.onClick.AddListener(() => { onAction?.Invoke(RaceType.Qualifying); });
-        }
-
-        public void RegisterGoSemifinalButton(Action<RaceType> onAction, bool active)
-        {
-            _view.GoSemifinal.interactable = active;
-
-            if (!active)
-            {
-                return;
-            }
-            
-            _view.GoSemifinal.onClick.RemoveAllListeners();
-            _view.GoSemifinal.onClick.AddListener(() => { onAction?.Invoke(RaceType.Semifinal); });
+            _view.GoTraining.onClick.RemoveAllListeners();
+            _view.GoTraining.onClick.AddListener(() => { onAction?.Invoke(); });
         }
         
-        public void RegisterGoFinalButton(Action<RaceType> onAction, bool active)
+        public void RegisterGoParameterButton(Action onAction)
         {
-            _view.GoFinal.interactable = active;
-
-            if (!active)
-            {
-                return;
-            }
-            
-            _view.GoFinal.onClick.RemoveAllListeners();
-            _view.GoFinal.onClick.AddListener(() => { onAction?.Invoke(RaceType.Final); });
-        }
-        
-        public void RegisterGoRankButton(Action<RaceType> onAction, bool active)
-        {
-            _view.GoRank.interactable = active;
-
-            if (!active)
-            {
-                return;
-            }
-            
-            _view.GoRank.onClick.RemoveAllListeners();
-            _view.GoRank.onClick.AddListener(() => { onAction?.Invoke(RaceType.Rank); });
-        }
-        
-        public void RegisterGoRankingButton(Action onAction, bool active)
-        {
-            _view.GoRanking.interactable = active;
-
-            if (!active)
-            {
-                return;
-            }
-            
-            _view.GoRanking.onClick.RemoveAllListeners();
-            _view.GoRanking.onClick.AddListener(() => { onAction?.Invoke(); });
+            _view.GoParameter.onClick.RemoveAllListeners();
+            _view.GoParameter.onClick.AddListener(() => { onAction?.Invoke(); });
         }
     }
 }
